@@ -1,30 +1,34 @@
+<!-- Result after I used HTML prettifier
+Next is code tag-->
 <!DOCTYPE html>
 <html lang="en">
+    <!-- my attempt at semantics-->
  <head> 
-  <title>Minimial HTML</title> 
+  <title>Assignment01</title> 
  </head> 
  <body> 
   <table border="1"> 
    <tbody>
     <tr>
-     <td colspan="3">The Daily News</td>
+     <td colspan="3"></td>
     </tr> 
     <tr> 
-     <td> <p>This is my first assignment</p> <p>This is my first assignment</p> </td> 
-     <td> <img src="Images\BostonT.png" /> </td> 
-     <td><img src="Images\butterfly.jpg" /> </td> 
+     <td> <img src="Images\BostonT.png" /> </td>  <!-- one image-->
+     <td>    <form>  <!-- form implementation-->
+        <label for="fname">First name:</label>
+        <br /> 
+        <input type="text" id="fname" name="fname" value="John" />
+        <br /> 
+        <label for="lname">Last name:</label>
+        <br /> 
+        <input type="text" id="lname" name="lname" value="Doe" /> 
+       </form>  </td> 
+     <td><img src="Images\butterfly.jpg" /> </td> <!-- second image -->
     </tr> 
    </tbody>
   </table> 
-  <form> 
-   <label for="fname">First name:</label>
-   <br /> 
-   <input type="text" id="fname" name="fname" value="John" />
-   <br /> 
-   <label for="lname">Last name:</label>
-   <br /> 
-   <input type="text" id="lname" name="lname" value="Doe" /> 
-  </form> \
+
+  <!-- table-->
   <table class="blueTable"> 
    <thead> 
     <tr> 
