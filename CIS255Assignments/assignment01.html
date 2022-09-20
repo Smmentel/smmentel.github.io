@@ -1,34 +1,58 @@
 <!-- Result after I used HTML prettifier
-Next is code tag-->
-<!DOCTYPE html>
+Next is code tag--><!DOCTYPE html>
 <html lang="en">
-    <!-- my attempt at semantics-->
  <head> 
-  <title>Assignment01</title> 
+  <style>
+     <!-- my attempt at semantics-->
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style> 
  </head> 
  <body> 
-  <table border="1"> 
-   <tbody>
-    <tr>
-     <td colspan="3">Assignment01</td>
-    </tr> 
-    <tr> 
-     <td> <img src="Images\BostonT.png" /> </td>  <!-- one image-->
-     <td>    <form>  <!-- form implementation-->
-        <label for="fname">First name:</label>
-        <br /> 
-        <input type="text" id="fname" name="fname" value="John" />
-        <br /> 
-        <label for="lname">Last name:</label>
-        <br /> 
-        <input type="text" id="lname" name="lname" value="Doe" /> 
-       </form>  </td> 
-     <td><img src="Images\butterfly.jpg" /> </td> <!-- second image -->
-    </tr> 
-   </tbody>
-  </table> 
-
-  <!-- table-->
+  <article class="Assignment01"> 
+   <h1>By Sarah Mentel</h1> 
+   <article class="ass1"> 
+    <h2>Boston Terrier, my first dog</h2> 
+    <p><img src="Images\BostonT.png" />  </p> 
+   </article> 
+   <article class="ass1"> 
+    <h2>html form</h2> 
+    <p></p>
+    <form> 
+     <!-- form implementation--> 
+     <label for="fname">First name:</label> 
+     <br /> 
+     <input type="text" id="fname" name="fname" value="John" /> 
+     <br /> 
+     <label for="lname">Last name:</label> 
+     <br /> 
+     <input type="text" id="lname" name="lname" value="Doe" /> 
+    </form> 
+    <p></p> 
+   </article> 
+   <article class="ass1"> 
+    <h2>Butterfly, my first dog passed away but when i see a monarch butterfly i imagine its him saying hi</h2> 
+    <p><img src="Images\butterfly.jpg" /> </p> 
+   </article> 
+  </article>   
+  <!-- table--> 
   <table class="blueTable"> 
    <thead> 
     <tr> 
@@ -41,42 +65,42 @@ Next is code tag-->
    <tfoot> 
     <tr> 
      <td colspan="4"> 
-      <div class="links">
+      <div class="links"> 
        <a href="#">&laquo;</a> 
        <a class="active" href="#">1</a> 
        <a href="#">2</a> 
        <a href="#">3</a> 
        <a href="#">4</a> 
-       <a href="#">&raquo;</a>
+       <a href="#">&raquo;</a> 
       </div> </td> 
     </tr> 
    </tfoot> 
    <tbody> 
     <tr> 
-     <td>cell1_1</td>
-     <td>cell2_1</td>
-     <td>cell3_1</td>
-     <td>cell4_1</td>
+     <td>cell1_1</td> 
+     <td>cell2_1</td> 
+     <td>cell3_1</td> 
+     <td>cell4_1</td> 
     </tr> 
     <tr> 
-     <td>cell1_2</td>
-     <td>cell2_2</td>
-     <td>cell3_2</td>
-     <td>cell4_2</td>
+     <td>cell1_2</td> 
+     <td>cell2_2</td> 
+     <td>cell3_2</td> 
+     <td>cell4_2</td> 
     </tr> 
     <tr> 
-     <td>cell1_3</td>
-     <td>cell2_3</td>
-     <td>cell3_3</td>
-     <td>cell4_3</td>
+     <td>cell1_3</td> 
+     <td>cell2_3</td> 
+     <td>cell3_3</td> 
+     <td>cell4_3</td> 
     </tr> 
     <tr> 
-     <td>cell1_4</td>
-     <td>cell2_4</td>
-     <td>cell3_4</td>
-     <td>cell4_4</td>
+     <td>cell1_4</td> 
+     <td>cell2_4</td> 
+     <td>cell3_4</td> 
+     <td>cell4_4</td> 
     </tr> 
-   </tbody>  
+   </tbody> 
   </table>  
  </body>
 </html>
