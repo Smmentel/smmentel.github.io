@@ -62,8 +62,16 @@ img[alt = "bird icon"]{
 }
 
 /* 9. Nav bar stuck to the top, has priority in stack, green background, @ 90%*, etc*/
+nav{
+  position: fixed;
+  z-index: -1;
 
-nav bar padding: 5px; and font-size: 20px;
+  background-color: rgb(77, 204, 77);
+  opacity: 90%;
+
+  padding: 5px;
+  font-size: 20px;
+}
 
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
@@ -74,7 +82,7 @@ nav bar padding: 5px; and font-size: 20px;
 */
 
 
-/* --- pre-existing css --- */
+/* ---10.  pre-existing css --- */
 /*   ---   pre-existing   css   ---   */  
 .stripey   tr:nth-child(even)   {  
   background-color:   gray;  
