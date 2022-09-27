@@ -1,7 +1,38 @@
-/* --- put your css here --- */ 
-/* modfied body element, specifically the backgroun color to sky blue */ 
+/* --- put your css here --- */
+
+/*   */
+
+/* 2. modfied body element, specifically the backgroun color to sky blue */ 
 body{background-color: skyblue;}
 
+/* 3. change #igottabeme font, I changed the color to purple so that you can see it better */ 
+#igottabeme{font-style:Arial, Helvetica, sans-serif;
+            color: purple}
+
+
+/* 4. left margin indent changed by 10 px for attribute classy */
+.classy{ margin-left: 10px; }
+
+/* 5. div elements bottom margins 50px */
+div{
+margin-bottom: 50px;
+}
+
+/* 6. modifying the span elements': height, width, padding, border, background color*/
+span{
+  width: 100px;
+  height: 50px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border: solid;
+  border-color: rgb(106, 150, 189);
+
+  background-color: hsla(60, 100%, 62%, 0.966);
+}
 
 
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
