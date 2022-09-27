@@ -39,6 +39,31 @@ span.a { display:inline; } /*Cant set width and height, allows elements left and
 span.b { display:block; } /*Stacks */
 span.c { display:inline-block; } /*Can set width and height, allows element left and right*/
 
+/* 8. Position icons */
+
+img[alt = "cat icon"]{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 0; /* bottom right with priority in the stack */
+}
+
+img[alt = "dog icon"]{
+  position: relative;
+  left: 50px;
+  top: 150px; /* 50px to the left and 150px above */
+}
+
+img[alt = "bird icon"]{
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  z-index: 1; /* inside div infront of the text */
+}
+
+/* 9. Nav bar stuck to the top, has priority in stack, green background, @ 90%*, etc*/
+
+nav bar padding: 5px; and font-size: 20px;
 
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
