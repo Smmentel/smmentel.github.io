@@ -11,8 +11,9 @@
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
-    background-color: gray;
+    background-color: skyblue;
   }
+  
   .stripey tr:nth-child(odd) {
     background-color: white;
   }
