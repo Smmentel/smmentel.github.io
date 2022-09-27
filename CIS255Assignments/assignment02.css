@@ -34,6 +34,11 @@ span{
   background-color: hsla(60, 100%, 62%, 0.966);
 }
 
+/* 7. span display property: inline, block or both  */
+span.a { display:inline; } /*Cant set width and height, allows elements left and right */
+span.b { display:block; } /*Stacks */
+span.c { display:inline-block; } /*Can set width and height, allows element left and right*/
+
 
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
