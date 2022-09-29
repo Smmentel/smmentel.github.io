@@ -13,9 +13,10 @@ function outputCartRow(item, total){
   for (let i = 0; i < 9; i++) {
     var i = table.insertRow(i);
   }
-
-  var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
+  for (let i = 0; i < 5; i++) {
+    var i = row.insertCell(i);
+  }
+ 
   cell1.innerHTML = "NEW CELL1";
   cell2.innerHTML = "NEW CELL2";
 }
