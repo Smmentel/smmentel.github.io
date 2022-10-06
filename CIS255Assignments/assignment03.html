@@ -1,44 +1,97 @@
-<header>
-    <h1>CIS-255: Assignment 03 Fall 2022</h1>
-  </header>
-  <main>
-    <article>
-      <section>
-        <h4>Last modified 9-29-2022 </h4>
-      </section>
-    </article>
-
-    <article>
-    <!-- Article may or may not also have a header --> 
-      <h3>03A. Convert Fahrenheit to Celsius</h3>
-      <p></p>
-    <section>
-      <h4>03B. Find GCD </h4>
-      <p>Section... Content content content content content content content content </p>
-    </section>
-  </article>
-    <article>
-    <!-- Article may or may not also have a header --> 
-      <h3>03C. Compute sum of digits</h3>
-      <p>Article... Content content content content content content content content </p>
-    <section>
-      <h4>03D. Generate new string from input fields </h4>
-      <p>Section... Content content content content content content content content </p>
-    </section>
-  </article>
-  <article>
-    <!-- Article may or may not also have a header --> 
-      <h3>03E. Tic-Tac-Toe game</h3>
-      <p></p>
-    <section>
-      <h4>txtbook </h4>
-      <p>Section... Content content content content content content content content </p>
-    </section>
-  </article>
+<!---->
+<h1>CIS-255: Assignment 03 Fall 2022
+</h1>
+<main>
+  <h3>03A. Convert Fahrenheit to Celsius
+  </h3>
+  <!-- Write internal JavaScript to convert Fahrenheit to Celsius.--> 
+  <p>
+    <!--field set tag to make border-->
+  <fieldset>
+    <legend>Enter a temperature: 
+    </legend> 
+    <!--Farenheit label and input box-->
+    <label for="lfahrenheit">Fahrenheit:
+    </label>
+    <input type="text"id="fahrenheit" name="fahrenheit">
+    <!--Button-->
+    <button class="btnConvert"onclick="convertToCelsius()">Convert
+    </button>
+    <br>
+    <br>
+    <!--Celsius label and output box-->
+    <label for="lcelsius">Celsius: 
+    </label>
+    <output type="text"id="celsius" name="celsius" </output>
+    <br>
+    <br>
+  </fieldset>
+  </p>
+<!--inline java script -->
+<script>
+  function convertToCelsius(){
+    var input = document.getElementById("fahrenheit");
  
-  </main>
-  <footer>
-    <hr .>
-    <p>&copy; 2022. <a href="https://smmentel.github.io/Resume/">Sarah Mentel</a>
-    </p>
-  </footer>      
+    var celsius;
+    celsius.value = (parseFloat(input.value) - 32) * (5/9);
+    
+       console.log(celsius.value);
+    document.getElementById("celsius").innerHTML = celsius.value;
+  }
+</script>
+<h3>03B. Find GCD 
+  </h4>
+<p> 
+<fieldset>
+  <label for="lnum1">Integer 1:
+  </label>
+  <input type="text"id="int1">
+  <br>
+  <br>
+  <label for="lnum2">Integer 2:
+  </label>
+  <input type="text"id="int2">
+  <br>
+  <br>
+  <button class="btnGCD" onclick="GCD()">Find Greatest Common Divisor
+  </button>
+  <output type="text"id="celsius" name="celsius"
+          </output>
+  <br>
+  <br>
+</fieldset> 
+</p>
+<h3>03C. Compute sum of digits
+</h3>
+<p> 
+<fieldset>
+  <input type="text"id="int">
+  <br>
+  <br>
+  <button class="btnSum" onclick="computeSum()">Compute Sum
+  </button>
+  <output type="text"id="celsius" name="celsius"
+          </output>
+  <br>
+  <br>
+</fieldset> 
+</p>
+<h3>03D. Generate new string from input fields 
+  </h4>
+<p>Section... Content content content content content content content content 
+</p>
+<h3>03E. Tic-Tac-Toe game
+</h3>
+<p>
+</p>
+<h3>txtbook  Q
+  </h4>
+<p>Section... Content content content content content content content content 
+</p>
+<footer>
+  <hr .>
+  <p>&copy; 2022. 
+    <a href="https://smmentel.github.io/Resume/">Sarah Mentel
+    </a>
+  </p>
+</footer> 
