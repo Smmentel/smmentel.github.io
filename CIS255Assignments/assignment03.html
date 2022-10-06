@@ -13,7 +13,7 @@
     <!--Farenheit label and input box-->
     <label for="lfahrenheit">Fahrenheit:
     </label>
-    <input type="text"id="fahrenheit" name="fahrenheit">
+    <input type="number"id="fahrenheit" name="fahrenheit">
     <!--Button-->
     <button class="btnConvert"onclick="convertToCelsius()">Convert
     </button>
@@ -29,14 +29,14 @@
   </p>
 <!--inline java script -->
 <script>
-  function convertToCelsius(){
-    var input = document.getElementById("fahrenheit");
- 
-    var celsius;
-    celsius.value = (parseFloat(input.value) - 32) * (5/9);
+convertToCelsius =() => {
+    let input = document.getElementById("fahrenheit");
+  
+    let celsius = (parseFloat(input.value) - 32) * (5/9);
     
-       console.log(celsius.value);
-    document.getElementById("celsius").innerHTML = celsius.value;
+    console.log(celsius);
+    
+    document.getElementById("celsius").innerHTML = celsius;
   }
 </script>
 <h3>03B. Find GCD 
