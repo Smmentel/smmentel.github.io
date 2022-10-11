@@ -1,0 +1,92 @@
+/*https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/ */
+/* CSS Code */
+    /* Heading */
+    h1 {
+        color: #003366;
+        font-size: 45px;
+    }
+h3{
+  color: #000066;
+  font-size: 30px;
+}
+/* Button styling learned on w3schools https://www.w3schools.com/css/css3_buttons.asp */
+button{
+   background-color:#99ccff;
+  border: none;
+  color: #000066;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+label{
+  color: #660033;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+legend{
+  color: #660033;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+input{
+  font-size: 16px;
+}
+output{
+  font-size: 18px;
+}
+    /* 3*3 Grid */
+    #b1, #b2, #b3, #b4, #b5,
+    #b6, #b7, #b8, #b9 {
+        width: 80px;
+        height: 52px;
+        margin: auto;
+        border: 1px solid gray;
+        border-radius: 6px;
+        font-size: 30px;
+        text-align: center;
+    }
+ 
+    /* Reset Button */
+    #but {
+        box-sizing: border-box;
+        width: 95px;
+        height: 40px;
+        border: 1px solid dodgerblue;
+        margin: auto;
+        border-radius: 4px;
+        font-family: Verdana,
+            Geneva, Tahoma, sans-serif;
+ 
+        background-color: dodgerblue;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+ 
+    /* Player turn space */
+    #print {
+        font-family: Verdana,
+            Geneva, Tahoma, sans-serif;
+ 
+        color: dodgerblue;
+        font-size: 20px;
+    }
+ 
+    /* Main Container */
+    #main {
+        text-align: center;
+    }
+ 
+    /* Game Instruction Text */
+    #ins {
+        font-family: Verdana,
+            Geneva, Tahoma, sans-serif;
+             
+        color: dodgerblue;
+        font-size: 17px;
+    }
