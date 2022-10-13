@@ -1,219 +1,155 @@
 <!--linking my documents together -->
 <link rel="stylesheet" href="assignment03.css">
 <script src="assignment03.js"></script>
-
-<h1>CIS-255: Assignment 03 Fall 2022
-</h1>
-
+<h1>CIS-255: Assignment 03 Fall 2022 by Sarah Mentel </h1>
 <main>
-  <h3>03A. Convert Fahrenheit to Celsius
-  </h3>
-  
-  <!-- Write internal JavaScript to convert Fahrenheit to Celsius.--> 
+  <h3>03A. Convert Fahrenheit to Celsius </h3>
+  <!-- Write internal JavaScript to convert Fahrenheit to Celsius.-->
   <p>
     <!--field set tag to make border-->
   <fieldset>
-    <legend>Enter a temperature: 
-    </legend> 
-    
+    <legend>Enter a temperature: </legend>
     <!--Farenheit label and input box-->
-    <label for="lfahrenheit">Fahrenheit:
-    </label>
-    <input type="number"id="fahrenheit" name="fahrenheit">
-    
+    <label for="lfahrenheit">Fahrenheit: </label>
+    <input type="number" id="fahrenheit" name="fahrenheit">
     <!--Button-->
-    <button class="btnConvert"onclick="convertToCelsius()">Convert
-    </button>
+    <button class="btnConvert" onclick="convertToCelsius()">Convert </button>
     <br>
     <br>
-    
     <!--Celsius label and output box-->
-    <label for="lcelsius">Celsius: 
-    </label>
-    <output type="text"id="celsius" name="celsius" </output>
-    <br>
-    <br>
+    <label for="lcelsius">Celsius: </label>
+    <output type="text" id="celsius" name="celsius" </output>
+      <br>
+      <br>
   </fieldset>
   </p>
-
-<!--inline java script -->
-<script>
-convertToCelsius =() => {
-    let input = document.getElementById("fahrenheit");
-  
-    let celsius = (parseFloat(input.value) - 32) * (5/9);
-    
-    console.log(celsius);
-    
-    document.getElementById("celsius").innerHTML = celsius;
-  }
-</script>
-
-<!--GCD problem gui-->
-<h3>03B. Find GCD 
-  </h4>
-<p> 
-<fieldset>
-  <label for="lnum1">Integer 1:
-  </label>
-  <input type="text"id="int1">
-  <br>
-  <br>
-  <label for="lnum2">Integer 2:
-  </label>
-  <input type="text"id="int2">
-  <br>
-  <br>
-  
-  <!--js variables to pass to function-->
- <script> 
-  let int1 = document.getElementById("int1");
-  let int2 = document.getElementById("int2");
+  <!--inline java script -->
+  <script>
+    convertToCelsius = () => {
+      let input = document.getElementById("fahrenheit");
+      let celsius = (parseFloat(input.value) - 32) * (5 / 9);
+      console.log(celsius);
+      document.getElementById("celsius").innerHTML = celsius;
+    }
   </script>
-  
-  <!--GCD button, onclick js function-->
-  <button class="btnGCD" 
-          onclick="GCD(parseFloat(int1.value),parseFloat(int2.value))"> Find Greatest Common Divisor
-  </button>
-  
-  <output type="text"id="gcd"
-          </output>
-  <br>
-  <br>
-</fieldset> 
-</p>
-
-<!--gui for sum of digits-->
-<h3>03C. Compute sum of digits
-</h3>
-<p> 
-<fieldset>
-  <input type="number"id="userStringNums">
-  <br>
-  <br>
-  <!--button with js function on click-->
-  <button class="btnSum" onclick="computeSum()">Compute Sum
-  </button>
-  <output type="text"id="sum"
-          </output>
-  <br>
-  <br>
-</fieldset> 
-</p>
-
-<!--gui for printing name -->
-<h3>03D. Generate new string from input fields 
-  <fieldset>
-    <legend>Enter a Name: 
-    </legend> 
-<p>
-  <!--Form for title-->
-  <form>
-    <label for ="title"> Title: </label>
-    <select id = "title">
-      <option value = "Ms">Ms.</option>
-      <option value = "Mrs">Mrs.</option>
-      <option value = "Mr">Mr.</option>
-      <option value = "Dr">Dr.</option>
-    </select>
-</form>
-<br>
-<!--First name label and input box-->
-    <label for="lfirst">~First~:</label>
-    <input type="text"id="first">
-<br>
-<br>
-    <!--Middle name label and input box-->
-    <label for="lMiddle">Middle:</label>
-    <input type="text"id="middle">
-<br>
-<br>    
-<!--Last name label and input box-->
-    <label for="lLast">~Last~:</label>
-    <input type="text"id="last">
-<br>
-<br> 
-      <!--Form for suffix-->
-  <form>
-    <label for ="suffix"> Suffix: </label>
-    <select id = "suffix" onchange="getSuffix()">
-      <option value = "N/A"></option>
-      <option value = "jr">Jr.</option>
-      <option value = "sr">Sr.</option>
-      <option value = "3rd">III</option>
-    </select>
-</form>
-<br>
-<input type="submit" onclick = "getName()">
-    <input type = "text" id = "userName"
-</fieldset>
-</p>
-</h3>
- 
-<h3>03E. Tic-Tac-Toe game
-  
-<!--I could not think of a way to do this without spending way more time than what it is worth to me personally, so I am theif and stole this from GeekforGeeks, for what it is worth i did try and look through and comprehend what is occuring
+  <!--GCD problem gui-->
+  <h3>03B. Find GCD </h4>
+    <p>
+    <fieldset>
+      <label for="lnum1">Integer 1: </label>
+      <input type="text" id="int1">
+      <br>
+      <br>
+      <label for="lnum2">Integer 2: </label>
+      <input type="text" id="int2">
+      <br>
+      <br>
+      <!--js variables to pass to function-->
+      <script>
+        let int1 = document.getElementById("int1");
+        let int2 = document.getElementById("int2");
+      </script>
+      <!--GCD button, onclick js function-->
+      <button class="btnGCD" onclick="GCD(parseFloat(int1.value),parseFloat(int2.value))"> Find Greatest Common Divisor </button>
+      <output type="text" id="gcd" </output>
+        <br>
+        <br>
+    </fieldset>
+    </p>
+    <!--gui for sum of digits-->
+    <h3>03C. Compute sum of digits </h3>
+    <p>
+    <fieldset>
+      <input type="number" id="userStringNums">
+      <br>
+      <br>
+      <!--button with js function on click-->
+      <button class="btnSum" onclick="computeSum()">Compute Sum </button>
+      <output type="text" id="sum" </output>
+        <br>
+        <br>
+    </fieldset>
+    </p>
+    <!--gui for printing name -->
+    <h3>03D. Generate new string from input fields <fieldset>
+        <legend>Enter a Name: </legend>
+        <p>
+          <!--Form for title-->
+        <form>
+          <label for="title"> Title: </label>
+          <select id="title">
+            <option value="Ms">Ms.</option>
+            <option value="Mrs">Mrs.</option>
+            <option value="Mr">Mr.</option>
+            <option value="Dr">Dr.</option>
+          </select>
+        </form>
+        <br>
+        <!--First name label and input box-->
+        <label for="lfirst">~First~:</label>
+        <input type="text" id="first">
+        <br>
+        <br>
+        <!--Middle name label and input box-->
+        <label for="lMiddle">Middle:</label>
+        <input type="text" id="middle">
+        <br>
+        <br>
+        <!--Last name label and input box-->
+        <label for="lLast">~Last~:</label>
+        <input type="text" id="last">
+        <br>
+        <br>
+        <!--Form for suffix-->
+        <form>
+          <label for="suffix"> Suffix: </label>
+          <select id="suffix" onchange="getSuffix()">
+            <option value="N/A"></option>
+            <option value="jr">Jr.</option>
+            <option value="sr">Sr.</option>
+            <option value="3rd">III</option>
+          </select>
+        </form>
+        <br>
+        <input type="submit" onclick="getName()">
+        <input type="text" id="userName" </fieldset>
+        </p>
+    </h3>
+    <h3>03E. Tic-Tac-Toe game
+      <!--I could not think of a way to do this without spending way more time than what it is worth to me personally, so I am theif and stole this from GeekforGeeks, for what it is worth i did try and look through and comprehend what is occuring
  
 https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/ -->
-  <fieldset>
-<p>
-  <br><br>
-        <!-- 3*3 grid of Boxes -->
-        <input type="text" id="b1" onclick=
-            "myfunc_3(); myfunc();" readonly>
-   
-        <input type="text" id="b2" onclick=
-            "myfunc_4(); myfunc();" readonly>
-   
-        <input type="text" id="b3" onclick=
-            "myfunc_5(); myfunc();" readonly>
-        <br><br>
-   
-        <input type="text" id="b4" onclick=
-            "myfunc_6(); myfunc();" readonly>
-               
-        <input type="text" id="b5" onclick=
-            "myfunc_7(); myfunc();" readonly>
-   
-        <input type="text" id="b6" onclick=
-            "myfunc_8(); myfunc();" readonly>
-        <br><br>
-   
-        <input type="text" id="b7" onclick=
-            "myfunc_9(); myfunc();" readonly>
-   
-        <input type="text" id="b8" onclick=
-            "myfunc_10();myfunc();" readonly>
-   
-        <input type="text" id="b9" onclick=
-            "myfunc_11();myfunc();" readonly>
-   
-        <!-- Grid end here  -->
-        <br><br><br>
-        <!-- Button to reset game -->
-        <button id="but" onclick="myfunc_2()">
-            RESET
-        </button>
-   
-        <br><br>
-        <!-- Space to show player turn -->
+      <fieldset>
+        <p>
+          <!-- 3*3 grid of Boxes -->
+          <input type="text" id="b1" onclick="myfunc_3(); myfunc();" readonly>
+          <input type="text" id="b2" onclick="myfunc_4(); myfunc();" readonly>
+          <input type="text" id="b3" onclick="myfunc_5(); myfunc();" readonly>
+          <br>
+          <br>
+          <input type="text" id="b4" onclick="myfunc_6(); myfunc();" readonly>
+          <input type="text" id="b5" onclick="myfunc_7(); myfunc();" readonly>
+          <input type="text" id="b6" onclick="myfunc_8(); myfunc();" readonly>
+          <br>
+          <br>
+          <input type="text" id="b7" onclick="myfunc_9(); myfunc();" readonly>
+          <input type="text" id="b8" onclick="myfunc_10();myfunc();" readonly>
+          <input type="text" id="b9" onclick="myfunc_11();myfunc();" readonly>
+          <!-- Grid end here  -->
+          <!-- Space to show player turn -->
         <p id="print"></p>
-</p>
-  </h3>
-  </fieldset>
-<h3>Part 2
-  <fieldset>
-<p>
- <a href= "https://smmentel.github.io/CIS255Assignments/proj8ch1/ch8proj1.html">click here
-</p>
-  </h3>
-  </fieldset>
-<br>
-
-<footer>
-  <hr .>
-  <p>&copy; 2022. 
-    <a href="https://smmentel.github.io/Resume/">Sarah Mentel
-    </a>
-  </p>
-</footer> 
+        </p>
+    </h3>
+    </fieldset>
+    <h3>Part 2 <fieldset>
+        <p>
+          <a href="https://smmentel.github.io/CIS255Assignments/proj8ch1/ch8proj1.html">click here
+        </p>
+    </h3>
+    </fieldset>
+    <br>
+    <footer>
+      <hr .>
+      <p>&copy; 2022. <a href="https://smmentel.github.io/Resume/">Sarah Mentel </a>
+      </p>
+    </footer>
