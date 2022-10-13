@@ -5,6 +5,9 @@
         color: #003366;
         font-size: 45px;
     }
+fieldset{
+  background-color: powderblue
+}
 h3{
   color: #000066;
   font-size: 30px;
@@ -12,6 +15,7 @@ h3{
 /* Button styling learned on w3schools https://www.w3schools.com/css/css3_buttons.asp */
 button{
    background-color:#99ccff;
+  font-weight: bold;
   border: none;
   color: #000066;
   padding: 15px 15px;
@@ -24,21 +28,40 @@ button{
   font-family: "Times New Roman", Times, serif;
 }
 label{
+  font-weight: bold;
   color: #660033;
   font-size: 22px;
   font-family: "Times New Roman", Times, serif;
 }
 legend{
+  font-weight: bold;
   color: #660033;
   font-size: 25px;
   font-family: "Times New Roman", Times, serif;
 }
 input{
-  font-size: 16px;
+ background-color:lightgrey;
+  font-weight: bold;
+  color: #000066;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
 }
 output{
+  background-color:lightgrey;
+  font-weight: bold;
+  color: #000066;
+  text-align: center;
+  display: inline-block;
   font-size: 18px;
+  margin: 4px 4px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
 }
+
     /* 3*3 Grid */
     #b1, #b2, #b3, #b4, #b5,
     #b6, #b7, #b8, #b9 {
