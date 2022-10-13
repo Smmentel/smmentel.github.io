@@ -50,10 +50,10 @@ img[alt = "cat icon"]{
 
 img[alt = "dog icon"]{
   position: relative;
-  left: 50px;
-  top: 150px; /* 50px to the left and 150px above */
+  right: 50px;
+  bottom: 150px; /* 50px to the left and 150px above */
 }
-
+#positionMe{position: relative;}
 img[alt = "bird icon"]{
   position: absolute;
   top: 50px;
@@ -63,8 +63,8 @@ img[alt = "bird icon"]{
 
 /* 9. Nav bar stuck to the top, has priority in stack, green background, @ 90%*, etc*/
 nav{
-  position: fixed;
-  z-index: -1;
+  position: sticky;
+  top: 0;
 
   background-color: rgb(77, 204, 77);
   opacity: 90%;
@@ -74,32 +74,31 @@ nav{
 }
 
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
-
   <head>
     <link rel="stylesheet" href="assignment02.css">
   </head>
-
 */
 
 
 /* ---10.  pre-existing css --- */
 /*   ---   pre-existing   css   ---   */  
 .stripey   tr:nth-child(even)   {  
-  background-color:   gray;  
+   background-color:   gray;  
 }  
 .stripey   tr:nth-child(odd)   {  
-  background-color:   white;  
+   background-color:   white;  
 }  
 .stripey   th   {  
-  color:   white;  
-  background-color:   black;  
+   color:   white;  
+   background-color:   black;  
 }  
 .mousey   td:hover   {  
-  background-color:   yellow;  
+   background-color:   yellow;  
 }  
 .rightey   td   {  
-  text-align:   right;  
+   text-align:   right;  
 }  
 input[type="text"].pinkey:focus   {  
-  background-color:   pink;  
+   background-color:   pink;  
 }  
+ 
