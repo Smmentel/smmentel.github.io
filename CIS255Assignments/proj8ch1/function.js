@@ -7,7 +7,7 @@ function calculateTotal(quantity, price){
 
 /*Function to return Cart Row */
 function outputCartRow(item, total){
-    var table = document.getElementById("table-fill");
+    var table = document.getElementById("table-fill")[0];
   var row = table.insertRow(0);
 
   for (let i = 0; i < 9; i++) {
