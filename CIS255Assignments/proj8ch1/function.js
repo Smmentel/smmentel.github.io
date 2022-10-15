@@ -39,7 +39,7 @@ function outputCartRow(item, total){
     cell4.innerHTML = "$" + curTotal;    // total
     
     //Align Text and adjust image table cell
-    cell0.style.width = "140px";
+    cell0.style.width = "150px";
     cell2.style.textAlign = "center";
     cell3.style.textAlign = "center";
     cell4.style.textAlign = "right";
