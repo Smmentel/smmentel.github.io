@@ -17,11 +17,11 @@ function outputCartRow(item, total){
   var row = table.insertRow(0);
 //fill with rows
   for (let i = 1; i < cart.length; i++) {
-    var x = table.insertRow(i);
+    let x = table.insertRow(i);
   }
  //fill rows with cells
   for (let j = 0; j < 5; j++) {
-    var y = row.insertCell(j);
+    let y = row.insertCell(j);
   }
  
   //
