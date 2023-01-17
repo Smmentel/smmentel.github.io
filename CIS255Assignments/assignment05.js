@@ -126,7 +126,7 @@ function updateLoansArray() {
   }
 } 
 
-//2.  update form values
+//2.  update form values with JQUERY
 let updateForm = () => {
   loanWithInterest = 0;
   let totalAmt = 0;
@@ -178,6 +178,7 @@ app.controller('myCtrl', function($scope) {
     }
     //last payment
     $scope.payments[10] = {
+        backgroundColor: lightyellow,
       "year":loans[4].loan_year + 11,
       "payment": toMoney(total),
       "amt": toMoney(0),
